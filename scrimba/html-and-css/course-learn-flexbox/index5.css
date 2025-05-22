@@ -1,0 +1,27 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex; /* default: row i.e. left to right*/
+  flex-direction: row; /* change to column i.e. top to bottom */
+}
+
+/* defines ratio of distribution of available space in the container to its flex items */
+/* defaults => flex-grow: 0; flex-shrink: 1; flex-basis: 0; */
+/* Example: shorthand for all 3 properties */
+/* flex: 1; = 1 1 0 */
+
+.home {
+  flex: 1 1 200px;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px; */
+}
+
+.logout {
+  flex: 5 1 200px;
+  /* flex-grow: 5;
+  flex-shrink: 1;
+  flex-basis: 200px; */
+}
+
+/* logout grows 10x faster than home after 200px threshold but both shrink at the same rate/proportion
+when threshld width < 200px */

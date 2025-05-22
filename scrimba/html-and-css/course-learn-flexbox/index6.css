@@ -1,0 +1,17 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex; /* default: row i.e. left to right*/
+  flex-direction: row; /* change to column i.e. top to bottom */
+}
+
+.item1 {
+  order: 3;
+}
+
+.item2 {
+  order: 0;
+}
+
+.item3 {
+  order: -4;
+}

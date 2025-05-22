@@ -1,0 +1,16 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex; /* default: row i.e. left to right*/
+  flex-direction: row; /* change to column i.e. top to bottom */
+}
+
+.container > div {
+  width: 300px;
+}
+
+/* flex-wrap: nowrap; By default this allows only one row or column and 
+does AUTO scale down of items within container */
+.container {
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+}

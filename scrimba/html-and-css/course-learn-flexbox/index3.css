@@ -1,0 +1,25 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex; /* default: row i.e. left to right*/
+  flex-direction: column; /* change to column i.e. top to bottom */
+  height: 100%; /* html, body height should be 100% */
+}
+
+/* flex-direction: column; */
+/* aligns along - main axis - vertical - top to bottom */
+/* top, centre and bottom */
+.container {
+  justify-content: flex-start; /* default */
+  /* justify-content: center;
+  justify-content: flex-end; */
+}
+
+/* flex-direction: column; */
+/* aligns along - cross axis - horizontal - left to right */
+/* left, centre and right */
+.container {
+  align-items: flex-start;
+  align-items: center;
+  align-items: flex-end;
+  align-items: stretch; /* default */
+}

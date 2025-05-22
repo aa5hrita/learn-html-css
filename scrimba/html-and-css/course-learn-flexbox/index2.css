@@ -1,0 +1,31 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex; /* default: row i.e. left to right*/
+  flex-direction: row; /* change to column i.e. top to bottom */
+}
+
+/* responsive along both main axis and cross axis 
+.container {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+*/
+.container {
+  height: 100%; /* works because html, body has height: 100% */
+
+  /* controls items along cross-axis */
+  /* default: stretch, i.e. fill the container */
+  align-items: stretch; /* stretch - along cross axis */
+  align-items: flex-start; /* top - of cross axis */
+  align-items: flex-end; /* bottom - of cross axis */
+  align-items: center; /* center - of cross axis */
+}
+
+.logout {
+  align-self: flex-start; /* top - of cross axis */
+}
+
+.home {
+  align-self: flex-end; /* bottom - of cross axis */
+}

@@ -1,0 +1,30 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex; /* default: row i.e. left to right*/
+  flex-direction: row; /* change to column i.e. top to bottom */
+}
+.container {
+  /* justify-content: default: flex-start, i.e. left to right for row as main axis */
+  /* flex-start, flex-end, center */
+  /* space-around, space-between, space-evenly */
+  justify-content: flex-start;
+}
+/* move the first div to the left and other two to the right */
+/* .home {
+  margin-right: auto;
+} */
+
+.container > div {
+  flex: 1; /* flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+  /* width: 33.3333%;  this needs to be changed when new div is added*/
+  /* flex takes care of the math upon addition of new elements in the container */
+}
+
+.container > .search {
+  flex: 2;
+}
+
+/* .container > .home,
+.logout {
+  flex: 1;
+} */
